@@ -1,0 +1,11 @@
+<app-header (featureSelected)="onNavigate($event)" ></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <!-- <app-recipes *ngIf="loadedFeature === 'recipe'"></app-recipes>
+      <app-shopping-list *ngIf="loadedFeature !== 'recipe'" ></app-shopping-list> -->
+      <!-- Mark the place where the angular router should render the component we should load depending on the path -->
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
